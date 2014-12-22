@@ -1,0 +1,20 @@
+<template name="friendList">
+
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">{{listName}}</div>
+        <!-- Table -->
+        <table class="table table-condensed table-striped table-bordered table-hover">
+            <tbody>
+            {{#each list}}
+                {{>friendListItem}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <a name="star" class="btn btn-default btn-small" href="/friendInput">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 등록하기
+    </a>
+
+</template>

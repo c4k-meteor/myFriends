@@ -1,0 +1,15 @@
+<template name="friendListItem">
+    <tr>
+        <td>{{this.no}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.email}}</td>
+        <td>
+            <button type="button" name="star" class="btn btn-default btn-small">
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+            </button>
+            <button type="button" name="remove" class="btn btn-default btn-small">
+                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+            </button>
+        </td>
+    </tr>
+</template>
